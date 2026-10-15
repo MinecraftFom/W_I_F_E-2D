@@ -14,10 +14,12 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(WIFE2d main.cpp)
+file(GLOB C_SOURCES "./src/*.c")
+file(GLOB CPP_SOURCES "./src/*.cpp")
+include_directories("./includes")
+add_executable(WIFE2d ${C_SOURCES} ${CPP_SOURCES})
 target_link_libraries(WIFE2d
         Qt::Core
         Qt::Gui
         Qt::Widgets
 )
-
