@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28.3)
-project(WIFE2d)
+project(WIFE2d CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_AUTOMOC ON)
@@ -16,8 +16,9 @@ find_package(Qt6 COMPONENTS
 
 file(GLOB C_SOURCES "./src/*.c")
 file(GLOB CPP_SOURCES "./src/*.cpp")
+file(GLOB HPP_SOURCES "./includes/*.hpp")
 include_directories("./includes")
-add_executable(WIFE2d ${C_SOURCES} ${CPP_SOURCES})
+add_executable(WIFE2d ${C_SOURCES} ${CPP_SOURCES} ${HPP_SOURCES})
 target_link_libraries(WIFE2d
         Qt::Core
         Qt::Gui
