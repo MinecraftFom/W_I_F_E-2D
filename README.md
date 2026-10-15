@@ -1,10 +1,10 @@
 # W.I.F.E 2D
 #### Windowless Interactive Filmware Engine
 
-Having a customizable wife with you~
+Having an unbidden guest on your desktop~
 
 # ABSTRACT
-Windowless Interactive Filmware Engine, simplified as W.I.F.E, is a project aiming to create desktop-based 2-dimensional dynamic images
+Windowless Interactive Filmware Engine, simplified as W.I.F.E., is a project aiming to create desktop-based 2-dimensional dynamic images
 
 ### Essential Links:
 > Browser
