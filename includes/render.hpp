@@ -1,11 +1,13 @@
 #pragma once
 #include <QWidget>
 
-QT_BEGIN_NAMESPACE
-class W2BorderlessCanvas;
-QT_END_NAMESPACE
+#include <const.hpp>
 
-class W2BorderlessCanvas : public QWidget
+W2_NAMESPACE_BEGINE
+class W2BorderlessCanvas;
+W2_NAMESPACE_END
+
+class W2_NAMESPACE W2BorderlessCanvas : public QWidget
 {
 public:
     W2BorderlessCanvas(int w, int h);

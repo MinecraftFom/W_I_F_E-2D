@@ -18,7 +18,7 @@ constexpr const char * choosable_quotes[] = {
     "杂鱼～哥哥～"
 };
 
-W2BorderlessCanvas::W2BorderlessCanvas(const int w, const int h)
+W2_NAMESPACE W2BorderlessCanvas::W2BorderlessCanvas(const int w, const int h)
 {
     this->clicking = false;
 
@@ -29,7 +29,7 @@ W2BorderlessCanvas::W2BorderlessCanvas(const int w, const int h)
     resize(this->w, this->h);
 }
 
-void W2BorderlessCanvas::mouseMoveEvent(QMouseEvent *event)
+void W2_NAMESPACE W2BorderlessCanvas::mouseMoveEvent(QMouseEvent *event)
 {
     if (!this->clicking)
         return;
@@ -37,7 +37,7 @@ void W2BorderlessCanvas::mouseMoveEvent(QMouseEvent *event)
     move(event->globalPosition().toPoint() - this->position);
 }
 
-void W2BorderlessCanvas::mousePressEvent(QMouseEvent *event)
+void W2_NAMESPACE W2BorderlessCanvas::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton)
     {
@@ -46,13 +46,13 @@ void W2BorderlessCanvas::mousePressEvent(QMouseEvent *event)
     }
 }
 
-void W2BorderlessCanvas::mouseReleaseEvent(QMouseEvent *event)
+void W2_NAMESPACE W2BorderlessCanvas::mouseReleaseEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton)
         this->clicking = false;
 }
 
-void W2BorderlessCanvas::paintEvent(QPaintEvent *)
+void W2_NAMESPACE W2BorderlessCanvas::paintEvent(QPaintEvent *)
 {
     int length = 11;
     QRandomGenerator generator;
