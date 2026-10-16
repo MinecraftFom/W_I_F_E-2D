@@ -14,7 +14,7 @@ Windowless Interactive Filmware Engine, simplified as W.I.F.E., is a project aim
 >
 >> [Github Repository](https://github.com/MinecraftFom/W_I_F_E-2D)
 
-### Mod Developers:
+### Module Developers:
 Important to know that this project belongs to Fom477, not Fom's Dev. It's published under the name of Fom477 individually, not as a group
 
 * Leading Developer: [Fom477](https://fom477.fomdev.com)
