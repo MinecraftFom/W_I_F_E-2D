@@ -86,10 +86,10 @@ W2HitBoxAABB::W2HitBoxAABB(QList<W2Relative> vertices)
     this->vertices = QList(std::move(vertices));
     this->sides = QList<W2Line>();
 
-    const int size = this->vertices.count();
+    const int size = static_cast<int>(this->vertices.count());
     for (int i = 0; i < size; i++)
     {
-        int next = (i + 1) % size;
+        const int next = (i + 1) % size;
 
         W2Relative c = this->vertices.at(i);
         W2Relative n = this->vertices.at(next);
