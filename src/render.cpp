@@ -14,7 +14,7 @@ W2_NAMESPACE W2BorderlessCanvas::W2BorderlessCanvas(const int w, const int h)
     resize(this->w, this->h);
 }
 
-void W2FonnEngine::W2BorderlessCanvas::add(W2Component *component)
+void W2_NAMESPACE W2BorderlessCanvas::add(W2Component *component)
 {
     this->subnodes.push_back(component);
 }
