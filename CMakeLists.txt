@@ -16,9 +16,10 @@ find_package(Qt6 COMPONENTS
 
 file(GLOB C_SOURCES "./src/*.c")
 file(GLOB CPP_SOURCES "./src/*.cpp")
+file(GLOB H_SOURCES "./includes/*.h")
 file(GLOB HPP_SOURCES "./includes/*.hpp")
 include_directories("./includes")
-add_executable(WIFE2d ${C_SOURCES} ${CPP_SOURCES} ${HPP_SOURCES})
+add_executable(WIFE2d ${C_SOURCES} ${CPP_SOURCES} ${H_SOURCES} ${HPP_SOURCES})
 target_link_libraries(WIFE2d
         Qt::Core
         Qt::Gui
