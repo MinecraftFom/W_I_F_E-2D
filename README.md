@@ -30,9 +30,13 @@ Important to know that this project belongs to Fom477, not Fom's Dev. It's publi
 ## BUILD
 If you are going to build this project on your local PC, remember:
 * Install CMake (At least of version 3.28.3)
-> Bash
->
->> sudo apt install cmake
+```bash
+sudo apt install cmake
+```
+* Install Json-C
+```bash
+sudo apt install libjson-c-dev 
+```
 * Install QT (At least of version Qt-6, at path ~/libs/qt)
 
 [Qt Remote](https://qt.io)
